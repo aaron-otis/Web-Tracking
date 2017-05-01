@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div>
+        {% for entry in entries %}
+        <a href="/img/{{ entry.name }}"><img src="/{{ imgpath }}/{{ entry.filename }}" width="480" height="360" /></a>
+        {% endfor %}
+    </div>
+{% endblock %}
